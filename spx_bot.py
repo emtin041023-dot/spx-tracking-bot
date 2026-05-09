@@ -392,11 +392,4 @@ def main():
 # RUN EVERY 30 MINUTES
 # =========================
 if __name__ == "__main__":
-    while True:
-        try:
-            main()
-        except Exception as e:
-            print("FATAL ERROR:", e)
-
-        print("Sleeping 30 minutes...")
-        time.sleep(1800)
+    main()
